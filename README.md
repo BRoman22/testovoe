@@ -1,30 +1,18 @@
-# React + TypeScript + Vite
+Тестовое задание:
+Создать SPA со списком карточек, на каждой из которых выводится картинка и любая информация на ваш вкус, которая пришла с эндпоинта. Для задачи можно выбрать любое публичное api, например, отсюда https://github.com/public-apis/public-apis 
+Каким должно быть приложение? 
+Пришедшие данные хранятся в сторе. 
+На карточке должна быть иконка лайка. При нажатии на которую, ставится или убирается лайк. Иконка должна подкрашиваться, когда залайкана. 
+На карточке должна быть иконка удаления. При нажатии на которую, карточка удаляется. 
+Сверху должна быть кнопка фильтра, которая по нажатию показывает только залайканые карточки. При отжатии опять показываются все карточки. 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+контент карточки(текст) должен быть урезан, чтобы у карточек была одинаковая высота
+при клике на любом месте карточке(кроме иконки лайка и кнопки удаления) мы должно попадать на отдельную страницу карточки. Уже в нем мы видим полный текст карточки.Так же на этой странице должна быть кнопка вернуться к списку карточек
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Дизайн не важен, главное, чтобы было просто и аккуратно. По стэку ориентируемся на список ниже. Остальные решения на вас. 
+Стэк: 
+Typescript
+React 
+Redux-toolkit(rtk-query)
+В каком формате сдавать ? 
+Ссылка на GitHub + проект выложенный на GitHub Pages
