@@ -1,0 +1,45 @@
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.image {
+  max-width: 600px;
+  max-height: 600px;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+.button {
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 30px auto 0;
+}
+
+.button_heart {
+  path {
+    fill: transparent;
+  }
+
+  &.active {
+    path {
+      fill: red;
+      stroke: red;
+    }
+  }
+}
+
+.button_home {
+  width: fit-content;
+  height: fit-content;
+  font-size: 30px;
+  line-height: 1;
+  background-color: wheat;
+  padding: 10px;
+}

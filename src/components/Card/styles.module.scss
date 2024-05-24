@@ -1,0 +1,28 @@
+.card {
+  background-color: wheat;
+  width: 350px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.image {
+  max-width: 150px;
+  max-height: 150px;
+  display: block;
+  margin: 30px auto 0;
+  object-fit: cover;
+  object-position: center;
+}
+
+.title {
+  margin: 20px auto 0;
+  font-size: 20px;
+  line-height: 1;
+  display: block;
+  width: 80%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

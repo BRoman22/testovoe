@@ -1,0 +1,65 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 115px;
+  row-gap: 50px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  li {
+    list-style: none;
+    position: relative;
+  }
+}
+
+.button {
+  background-color: transparent;
+  width: 24px;
+  height: 24px;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  position: absolute;
+  top: 100px;
+}
+
+.button_cross {
+  right: 40px;
+}
+
+.button_heart {
+  left: 40px;
+
+  path {
+    fill: transparent;
+  }
+
+  &.active {
+    path {
+      fill: red;
+      stroke: red;
+    }
+  }
+}
+
+.label {
+  cursor: pointer;
+  width: fit-content;
+  height: 30px;
+  display: flex;
+  margin: 0 auto 40px;
+  align-items: center;
+  gap: 10px;
+}
+
+.checkbox {
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.title {
+  margin: 0 auto;
+}
